@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Шеф КУХНИ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/main.css?v=01">
+</head>
+<body>
+    <!--[if lte IE 8]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Main wrapper -->
+    <div class="wrapper">
+        <!-- Inner wrapper -->
+        <div class="inner-wrapper">
+            <header>
+                <div class="inner-container">
+                    <a href="index.html" class="logo"></a>
+                    <p class="description-info">Продажа кухонь в Минске и Минской области</p>
+                    <button class="calculation-btn">
+                        <span>Рассчитать стоимость</span>
+                    </button>
+                    <!-- <a href="#" class="calculation-link">Рассчитать стоимость</a> -->
+                    <div class="phones">
+                        <p>+375<strong> 44 444-44-444</strong></p>
+                        <p>+375<strong> 44 444-44-444</strong></p>
+                    </div>
+                    <button class="call-request">
+                        <span>Заказать звонок</span>
+                    </button>
+                </div>
+            </header>
+            <nav class="top-nav">
+                <div class="inner-container">
+                    <ul>
+                        <li>
+                            <a href="#">Каталог</a>
+                        </li>
+                        <li>
+                            <a href="#">Калькулятор</a>
+                        </li>
+                        <li>
+                            <a href="#">Подарки</a>
+                        </li>
+                        <li>
+                            <a href="#">Отзывы</a>
+                        </li>
+                        <li>
+                            <a href="#">Дизайн</a>
+                        </li>
+                        <li>
+                            <a href="#">Преимущества</a>
+                        </li>
+                        <li>
+                            <a href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <main>
+                <div class="progressive-bar-container hidden">
+                    <div class="progressive-bar-orange" style="width:25%;"></div>
+                    <div class="progressive-bar-white" style="width:75%;"></div>
+                </div>
+                <!-- Starting position -->
+                <div class="step-0">
+                    <p class="top-text">Ищете кухни по выгодной цене?</p>
+                    <p class="top-text bold">Найдём лучшие цены на <span class="orange">кухни!<span></p>
+                    <p class="top-text bold">Стоимость напрямую с фабрик!</p>
+                    <p class="middle-text">Ответьте на 5 вопросов и получите скидку <span class="orange">20%!</span></p>
+                    <p class="middle-text">Вы экономите время менеджера - мы экономим Ваши деньги!</p>
+                    <button id="callculate" class="callculate-btn">
+                        <span>Рассчитать стоимость</span>
+                    </button>
+                </div>
+                <!-- Step 1 -->
+                <div class="step-1 hidden">
+                    <p class="step-text">Шаг 1: Выберите тип кухни</p>
+                    <div class="kitchen-types">
+                        <div class="type type-1">
+                            <p class="type-name"><i class="radio-btn"><i class="radio-inner"></i></i>Угловая кухня</p>
+                            <div class="discount">
+                                <p>Скидка <span class="orange">16 000р</span></p>
+                            </div>
+                        </div>
+                        <div class="type type-2">
+                            <p class="type-name"><i class="radio-btn"><i class="radio-inner"></i></i>Линейная планировка</p>
+                            <div class="discount">
+                                <p>Скидка <span class="orange">16 000р</span></p>
+                            </div>
+                        </div>
+                        <div class="type type-3">
+                            <p class="type-name"><i class="radio-btn"><i class="radio-inner"></i></i>Двухрядная планировка</p>
+                        </div>
+                        <div class="type type-4">
+                            <p class="type-name"><i class="radio-btn"><i class="radio-inner"></i></i>Кухня с островом</p>
+                        </div>
+                        <div class="type type-5">
+                            <p class="type-name"><i class="radio-btn"><i class="radio-inner"></i></i>Кухня с полуостровом</p>
+                        </div>
+                        <div class="type type-6">
+                            <p class="type-name"><i class="radio-btn"><i class="radio-inner"></i></i>П-образная кухня</p>
+                        </div>
+                        <div class="type type-0">
+                            <p class="type-name"><i class="radio-btn"><i class="radio-inner"></i></i>Пока не знаю</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Step 2 -->
+                <div class="step-2 hidden">
+                    <p class="step-text">Шаг 2: Задайте размер кухни</p>
+                    <div class="size-container">
+                        <div class="top-size">
+                            <div class="size-inner">
+                                <div class="arrow-horizontal horizontal-left"></div>
+                                <div class="arrow-horizontal horizontal-right"></div>
+                                <p class="size-text">Длина, м</p>
+                                <input class="size-input" type="number" placeholder="6">
+                            </div>
+                        </div>
+                        <div class="left-size">
+                            <div class="side-size-inner">
+                                <div class="arrow-vertical vertical-top"></div>
+                                <div class="arrow-vertical vertical-bottom"></div>
+                                <p class="size-text">Ширина, м</p>
+                                <input class="size-input" type="number" placeholder="3">
+                            </div>
+                        </div>
+                        <div class="kitchen-img"></div>
+                        <div class="right-size">
+                            <div class="side-size-inner">
+                                <div class="arrow-vertical vertical-top"></div>
+                                <div class="arrow-vertical vertical-bottom"></div>
+                                <p class="size-text">Ширина, м</p>
+                                <input class="size-input" type="number" placeholder="3">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="nosize" class="type type-0">
+                        <p class="type-name"><i class="radio-btn"><i class="radio-inner"></i></i>Пока не знаю</p>
+                    </div>
+                </div>
+                <!-- Step 3 -->
+                <div class="step-3 hidden">
+                    <p class="step-text">Шаг 3: Выберите материал и цвет кухни</p>
+                    <div class="fabric-types">
+                        <p class="fabric-caption">Материал</p>
+                        <div class="type fabric-1">
+                            <p class="type-name"><i class="radio-btn"><i class="radio-inner"></i></i>Аллюминиевая</p>
+                        </div>
+                        <div class="type fabric-2">
+                            <p class="type-name"><i class="radio-btn"><i class="radio-inner"></i></i>Пластиковая</p>
+                        </div>
+                        <div class="type fabric-3">
+                            <p class="type-name"><i class="radio-btn"><i class="radio-inner"></i></i>Деревянная</p>
+                        </div>
+                        <div class="type fabric-4">
+                            <p class="type-name"><i class="radio-btn"><i class="radio-inner"></i></i>Искуственный камень</p>
+                        </div>
+                        <div class="type fabric-5">
+                            <p class="type-name"><i class="radio-btn"><i class="radio-inner"></i></i>Из МДФ</p>
+                        </div>
+                    </div>
+                    <div class="color-types">
+                        <p class="fabric-caption">Цвет</p>
+                        <div class="color-number">
+                            <select>
+                                <option>1 цвет</option>
+                                <option>2 цвета</option>
+                                <option>3 цвета</option>
+                            </select>
+                        </div>
+                        <div class="color color-1"></div>
+                        <div class="color color-2"></div>
+                        <div class="color color-3"></div>
+                        <div class="color color-4"></div>
+                        <div class="color color-5"></div>
+                        <div class="color color-6"></div>
+                        <div class="color color-7"></div>
+                        <div class="color color-8"></div>
+                        <div class="color color-9"></div>
+                    </div>
+                    <div id="nofabric" class="type type-0">
+                        <p class="type-name"><i class="radio-btn"><i class="radio-inner"></i></i>Пока не знаю</p>
+                    </div>
+                </div>
+                <!-- Step 4 -->
+                <div class="step-4 hidden">
+                    <p class="step-text">Шаг 4: Выберите подходящий вариант рассрочки</p>
+                    <div class="discount-types">
+                        <div>
+                            <div class="type discount-1">
+                                <p class="type-name"><i class="radio-btn"><i class="radio-inner"></i></i>Карта «Халва»</p>
+                            </div>
+                            <div class="type discount-2">
+                                <p class="type-name"><i class="radio-btn"><i class="radio-inner"></i></i>«Карта покупок»</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="type discount-3">
+                                <p class="type-name"><i class="radio-btn"><i class="radio-inner"></i></i>Рассрочка от банка</p>
+                            </div>
+                            <div class="type discount-4">
+                                <p class="type-name"><i class="radio-btn"><i class="radio-inner"></i></i>Рассрочка от компании «Шеф Кухни»</p>
+                            </div>
+                        </div>
+                        <div class="type discount-5">
+                            <p class="type-name"><i class="radio-btn"><i class="radio-inner"></i></i>«Без рассрочки»</p>
+                        </div>
+                        <div class="type discount-6">
+                            <p class="type-name"><i class="radio-btn"><i class="radio-inner"></i></i>Пока не знаю</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Complete modal -->
+                <div class="complete-wrapper hidden">
+                    <div class="complete">
+                        <h2 class="complete-caption">Ваша кухня просчитана!</h2>
+                        <p class="sms-notifiaction">Ориентировочная стоимость Вашей кухни будет выслана Вам бесплатным SMS сообщением</p>
+                        <input class="phone-input" type="number" placeholder="Телефон">
+                        <button class="get-btn">
+                            <span>получить стоимость кухни</span>
+                        </button>
+                        <p class="bonus">* Также на Ваш телефон будет забронирован сертификат на <span class="orange">30% скидку</span></p>
+                        <button class="get-btn count-again">
+                            <span>пересчитать</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- Buttons forward and back -->
+                <div class="btns-group hidden">
+                    <button id="back" class="btn-back">
+                        <span>Назад</span>
+                    </button>
+                    <button id="forward" class="btn-forward">
+                        <span>Далее</span>
+                    </button>
+                </div>
+            </main>
+
+        </div>
+        <!-- Footer -->
+        <footer>
+            <div class="inner-container">
+                <a href="index.html" class="logo"></a>
+                <p class="description-info">Продажа кухонь в Минске и Минской области</p>
+                <button class="calculation-btn">
+                    <span>Рассчитать стоимость</span>
+                </button>
+                <!-- <a href="#" class="calculation-link">Рассчитать стоимость</a> -->
+                <div class="phones">
+                    <p>+375<strong> 44 444-44-444</strong></p>
+                    <p>+375<strong> 44 444-44-444</strong></p>
+                </div>
+                <button class="call-request">
+                    <span>Заказать звонок</span>
+                </button>
+            </div>
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/main-script.js"></script>
+</body>
+</html>

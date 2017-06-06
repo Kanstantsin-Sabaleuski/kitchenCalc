@@ -1,0 +1,13 @@
+/* Ekibastuz fonts family */
+
+@font-face {
+    font-family: "Ekibastuz regular";
+    src: url("../fonts/Ekibastuz-Regular.woff") format("woff"),
+         url("../fonts/Ekibastuz-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Ekibastuz bold";
+    src: url("../fonts/Ekibastuz-Bold.woff") format("woff"),
+        url("../fonts/Ekibastuz-Bold.ttf") format("truetype");
+}
