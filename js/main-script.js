@@ -32,8 +32,6 @@
         });
     }
     $('#callculate').click(function() {
-        // $('.step-0').addClass('hidden');
-        // $('.step-1').removeClass('hidden');
         $( ".step-0" ).fadeOut("slow", function() {
             currentStep = 1;
             $('.step-1').fadeIn('slow');
@@ -54,74 +52,25 @@
             stepBackward();
         }
     });
-    // $('#back').click(function() {
-    //     if (currentStep === 1) {
-    //         $( ".step-1" ).add($('.btns-group')).add($('.progressive-bar-container')).fadeOut("slow", function() {
-    //             currentStep--;
-    //             $('.step-0').fadeIn('slow');
-    //         });
-    //     }
-    //     if (currentStep === 2) {
-    //         $( ".step-2" ).fadeOut("slow", function() {
-    //             currentStep--;
-    //             $('.step-1').fadeIn('slow');
-    //             bar();
-    //         });
-    //     }
-    //     if (currentStep === 3) {
-    //         $( ".step-3" ).fadeOut("slow", function() {
-    //             currentStep--;
-    //             $('.step-2').fadeIn('slow');
-    //             bar();
-    //         });
-    //     }
-    // });
     $('#forward').click(function() {
         if (noClick) {
             return;
         }
         if (currentStep === 4) {
             $('.complete-wrapper').removeClass('hidden');
-            //console.log('Complete');
-            //return;
         } else {
             stepForward();
         }
     });
-    // $('#forward').click(function() {
-    //     if (currentStep === 1) {
-    //         $( ".step-1" ).fadeOut("slow", function() {
-    //             currentStep++;
-    //             $('.step-2').fadeIn('slow');
-    //             // $('.progressive-bar-orange').animate({
-    //             //     width: 20*currentStep + '%'
-    //             // }, 1500);
-    //             // $('.progressive-bar-white').animate({
-    //             //     width: 100 - 20*currentStep +'%'
-    //             // }, 1500);
-    //             bar();
-    //         });
-    //     }
-    //     if (currentStep === 2) {
-    //         $( ".step-2" ).fadeOut("slow", function() {
-    //             currentStep++;
-    //             $('.step-3').fadeIn('slow');
-    //             bar();
-    //         });
-    //     }
-    // });
     $('.kitchen-types').on('click', '.type', function(event) {
-        //console.log(this);
         if (kitchenType) {
             $(kitchenType).removeClass('active');
         }
         $(this).addClass('active');
         kitchenType = this;
         var currentTypeN = +$(this).attr('class').charAt(10);
-        //console.log(currentType);
     });
     $('.discount-types').on('click', '.type', function(event) {
-        //console.log(this);
         if (discountType) {
             $(discountType).removeClass('active');
         }
@@ -143,7 +92,6 @@
         }
     });
     $('#nosize').on('click', function() {
-        //console.log(this);
         noSize = !noSize;
         if (noSize) {
             $('#nosize').addClass('active');
@@ -163,15 +111,6 @@
         if (this === event.target) {
             $('.complete-wrapper').addClass('hidden');
         }
-        // var out = $('.complete-wrapper');
-        // var inside = $('.complete');
-        // console.log(out[0] === this);
-        // console.log(inside[0] === event.target);
-        // console.log(this === event.target);
-        // console.log(out[0]);
-        // console.log(inside[0]);
-        // console.log(this);
-        //console.log(event.target);
     });
     $('.get-btn').click(function(event) {
         $('.complete-wrapper').addClass('hidden');
